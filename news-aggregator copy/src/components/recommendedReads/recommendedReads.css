@@ -1,0 +1,12 @@
+.RR-feed {
+    max-width: 1350px;
+}
+.RR-grid {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start of the row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Center items vertically */
+    gap: 5rem; /* Add spacing between items */
+}

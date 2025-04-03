@@ -1,0 +1,97 @@
+.collections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    margin: 2em auto;
+    max-width: 100%; /* Ensure it fits within the viewport */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008078;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    color: #d9d9d9;
+    width: 100%;
+    text-align: left;
+    border-style: solid;
+  }
+  
+  .for-your-pocket-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  .for-your-pocket-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start of the row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Add spacing between items */
+  }
+  
+  .blockquote-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  .horiz-collections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  /* Grid layout for Fascinating Stories and Discover More Topics */
+  .collections-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left column takes 3x the space of the right column */
+    gap: 20px; /* Space between the columns */
+    margin: 20px 0; /* Add some spacing around the grid */
+  }
+  
+  .collections-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .collections-right {
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Add some padding */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .finest-discoveries-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+
+  .btm-for-your-pocket-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start of the row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Add spacing between items */
+  }
+  

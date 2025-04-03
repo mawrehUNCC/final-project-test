@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap');
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: none;
+  border: none;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1A1A1A;
+    background-color: #ffffff;
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h1, h2 {
+    font-family: 'Charis SIL', 'Doyle', 'Times New Roman', serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+h3, p {
+    font-family: 'Inter', 'Graphik Web', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1A1A1A;
+}

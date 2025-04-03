@@ -1,0 +1,89 @@
+.article-buttons {
+  /* ...existing styles... */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Add padding to prevent tooltip overlap */
+}
+
+.action-btn {
+  position: relative;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+  background-color: transparent; /* Ensure background is transparent */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Add pointer cursor for better UX */
+  display: flex; /* Ensure icons are displayed properly */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set a fixed size for buttons */
+  height: 40px;
+}
+
+.action-btn img {
+  width: 20px; /* Ensure icons are visible */
+  height: 20px;
+  object-fit: contain; /* Maintain aspect ratio of icons */
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 125%; /* Position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  max-width: 200px; /* Ensure tooltip fits on one line */
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Arrow at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.action-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.notifications-container {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.notification img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}

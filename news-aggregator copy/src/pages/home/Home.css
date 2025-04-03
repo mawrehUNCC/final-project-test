@@ -1,0 +1,117 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    margin: 2em auto;
+    max-width: 100%; /* Ensure it fits within the viewport */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+a {
+  text-decoration: none;
+  color: #008078;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.greeting {
+  font-weight: 700;
+}
+
+.divider {
+  color: #d9d9d9;
+  width: 100%;
+  text-align: left;
+  border-style: solid;
+}
+
+.recent-saves-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.recommended-reads-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.recommended-reads-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align items to the start of the row */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Add spacing between items */
+}
+
+.tag-menu-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.tag-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.pocket-hits-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.popular-collections-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.popular-collections-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.worthy-reads-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.worthy-reads-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Add spacing between articles */
+  justify-content: center; /* Center the grid horizontally */
+  align-items: start; /* Align items to the top of each row */
+}
+
+.worthy-reads-container .article-card {
+  height: 445px; /* Match the height of articles in popular-collections */
+  width: 390px; /* Match the width of articles in popular-collections */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}

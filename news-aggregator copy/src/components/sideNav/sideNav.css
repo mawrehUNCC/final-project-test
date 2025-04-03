@@ -1,0 +1,67 @@
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  width: 9.8rem;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.side-nav-button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.sidenav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: white;
+  color: #1a1a1a;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidenav-link .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #1a1a1a; /* Default color */
+  transition: fill 0.3s; /* Smooth transition for color change */
+}
+
+.sidenav-link:hover {
+  background-color: rgba(0, 128, 120, 0.28);
+  text-decoration: none;
+}
+
+.sidenav-link:hover .icon {
+  fill: #008078; /* Change to #008078 on hover */
+}
+
+.sidenav-link.active {
+  background-color: rgba(0, 128, 120, 0.28);
+  color: #008078;
+}
+
+.sidenav-link.active .icon {
+  fill: #008078;
+}

@@ -1,0 +1,126 @@
+/* Recommended Reads Article Card Styles */
+.card-RR {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Ensures actions-container stays at the bottom */
+  border: none;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 445px;
+  width: auto;
+  min-width: 390px;
+  margin: 2em auto;
+}
+
+.card-RR:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-RR {
+  width: 100%;
+  height: 221px;
+  min-width: 390px;
+  min-height: 221px;
+  object-fit: cover;
+}
+
+.content-RR {
+  padding: 15px;
+  text-align: left;
+  flex-grow: 1; /* Allows the content to take up available space */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.content-RR h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.content-RR p {
+  font-size: 0.8rem;
+  color: #1A1A1A;
+  overflow: hidden; /* Prevents overflowing text */
+  text-overflow: ellipsis; /* Adds "..." when text is too long */
+}
+
+.title-RR {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0;
+  color: #1A1A1A;
+}
+
+/* Medium/Regular Article Card Styles */
+.card-MD {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Ensures actions-container stays at the bottom */
+  border: none;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 445px;
+  width: auto;
+  min-width: 390px;
+  margin: 2em auto;
+}
+
+.card-MD:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-MD {
+  width: 100%;
+  height: 221px;
+  min-width: 390px;
+  min-height: 221px;
+  object-fit: cover;
+}
+
+.content-MD {
+  padding: 15px;
+  text-align: left;
+  flex-grow: 1; /* Allows the content to take up available space */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.content-MD h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.content-MD p {
+  font-size: 0.8rem;
+  color: #1A1A1A;
+  overflow: hidden; /* Prevents overflowing text */
+  text-overflow: ellipsis; /* Adds "..." when text is too long */
+}
+
+.title-MD {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0;
+  color: #1A1A1A;
+}
+
+/* Actions container styles */
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px; /* Adds spacing around the actions */
+  max-height: 35px; /* Ensures the container doesn't grow too large */
+  width: 100%; /* Ensures it takes the full width of the card */
+}
+
+.article-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.save-button {
+  margin-left: auto;
+}

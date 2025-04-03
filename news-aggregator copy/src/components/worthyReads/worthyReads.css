@@ -1,0 +1,18 @@
+.WR-feed {
+    max-width: 1350px;
+    margin: 0 auto; /* Center the feed horizontally */
+}
+
+.WR-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 1rem 5rem; /* Add spacing between items */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: start; /* Align items to the top of each row */
+}
+
+.WR-grid .article-card {
+    height: 445px; /* Match the height of articles in popular-collections */
+    width: 390px; /* Match the width of articles in popular-collections */
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
